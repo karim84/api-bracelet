@@ -1,9 +1,9 @@
 FROM python:3
 
-ADD main.py /
+ADD __main__.py /
 
 RUN pip install -r requirements.txt
 
-CMD [ "python", "./main.py"]
+CMD [ "python", "./__main__.py"]
 
 
